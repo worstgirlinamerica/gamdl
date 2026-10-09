@@ -14,7 +14,7 @@ Fork of [glomatico/gamdl](https://github.com/glomatico/gamdl) that adds a PlayRe
 | Music videos (WVD) | 1080 | 1080 |
 | Music videos (PRD) | ❌ | 4k |
 | Song webplayback fallback | ❌ | ✅ |
-| Requires wrappr | optional | required for Music Videos (PlayReady/ALAC) |
+| Requires wrappr | optional | required for 2160p Music Videos (PlayReady) and ALAC |
 | Extra install step | none | Go binary (`gamdl-playready`) |
 
 ---
