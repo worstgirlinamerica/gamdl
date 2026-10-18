@@ -51,7 +51,7 @@ Export your browser cookies in Netscape format while logged into [music.apple.co
 
 ### 5. wrappr (for PlayReady and ALAC)
 
-The companion daemon — handles Apple account auth, playback dispatch, and the `/license` endpoint this fork uses for PlayReady. See [worstgirlinamerica/wrappr](https://github.com/worstgirlinamerica/wrappr/tree/playready) for setup. Once it's running, `curl http://127.0.0.1/health` should return `"status":"ok"`.
+The companion wrapper daemon which handles Apple account auth, playback dispatch, and adds two new endpoints, like the `/license` endpoint this fork uses for PlayReady. See [worstgirlinamerica/wrappr](https://github.com/worstgirlinamerica/wrappr/tree/playready) for setup. Once it's running, `curl http://127.0.0.1/health` should return `"status":"ok"`.
 
 ---
 
@@ -69,7 +69,7 @@ This will compile the native Rust extension. It takes a minute or two. If it fai
 
 ### Step 2 — Build the PlayReady helper
 
-This is a small Go binary that handles the PlayReady CDM challenge/license exchange. It needs to be built once and placed somewhere on your PATH.
+This is a small Go binary that handles the CDM challenge/license exchange. It needs to be built once and placed somewhere on your PATH.
 
 ```bash
 cd tools/playready-helper
